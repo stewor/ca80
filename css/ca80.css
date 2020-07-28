@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: rgb(240, 233, 233);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.wrap {
+  position: relative;
+  width: 99vw;
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: url("../img/ca80b.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  height: 20vh;
+  line-height: 20vh;
+  margin-bottom: 10vh;
+  background-image: url("../img/indextlo.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  border-bottom: 2px solid gray;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+/* ------------Display------------- */
+.eightDisplay {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.horizontal {
+  width: 36px;
+  height: 5px;
+  margin-left: 2px;
+  margin-right: 3px;
+  background-color: red;
+  border-radius: 10%;
+  float: left;
+}
+
+.oneDisplay {
+  width: 40px;
+  overflow: hidden;
+  float: left;
+  margin-left: 3px;
+}
+
+.vertical {
+  width: 5px;
+  height: 36px;
+  background-color: red;
+  border-radius: 10%;
+  float: left;
+}
+
+.verticalR {
+  margin-left: 30px;
+  width: 5px;
+  height: 36px;
+  background-color: red;
+  border-radius: 10%;
+  float: left;
+}
+
+.on {
+  opacity: 0.4;
+}
+
+.off {
+  opacity: 1;
+}
+
+/* ------------Button------------- */
+.twoButtons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.touchButton {
+  padding: 2vh;
+}
+
+.fontNarrow {
+  font-size: 80px;
+}
+
+.notclickable {
+  pointer-events: none;
+}
+
+.animation {
+  animation: animation 1s ease infinite;
+}
+
+.ca80 {
+  opacity: 0.8;
+  margin-left: 2vw;
+  margin-bottom: 10px;
+}
+
+a {
+  color: rgb(240, 233, 233);
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  color: hsl(0, 19%, 93%);
+  min-height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-top: 1px solid gray;
+}
+
+.footerL {
+  width: 90%;
+  text-align: right;
+}
+
+.footerP {
+  width: 10%;
+}
+
+@keyframes animation {
+  0% {
+    color: rgb(240, 233, 233);
+  }
+
+  40% {
+    color: rgb(240, 233, 233);
+  }
+
+  50% {
+    color: red;
+  }
+
+  60% {
+    color: rgb(240, 233, 233);
+  }
+
+  100% {
+    color: rgb(240, 233, 233);
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 740px) and (orientation: landscape) {
+  .twoButtons {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .horizontal {
+    width: 30px;
+    height: 5px;
+    margin-left: 2px;
+    margin-right: 3px;
+  }
+
+  .oneDisplay {
+    width: 34px;
+    margin-left: 3px;
+  }
+
+  .vertical {
+    width: 5px;
+    height: 30px;
+  }
+
+  .verticalR {
+    margin-left: 24px;
+    width: 5px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+  .ca80 {
+    margin-top: 5vh;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .ca80 {
+    margin-top: 5vh;
+  }
+
+}

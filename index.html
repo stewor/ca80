@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CA80</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="http://stewor.pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CA80 reflex game" />
+    <meta property="og:description" content="CA80 reflex game by stewor" />
+    <meta property="og:image" content="http://stewor.pl/game.jpg">
+    <link rel="stylesheet" href="css/ca80.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <script src="https://kit.fontawesome.com/b16d70f8fd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: 'your-app-id',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <header>
+        <h1>CA80 reflex game</h1>
+    </header>
+    <div class="wrap">
+        <main>
+            <section class="eightDisplay">
+                <div class="oneDisplay">
+                    <div class="digit1">
+                        <div class="horizontal "></div>
+                        <div class="vertical "></div>
+                        <div class="verticalR on"></div>
+                        <div class="horizontal on"></div>
+                        <div class="vertical"></div>
+                        <div class="verticalR on"></div>
+                        <div class="horizontal"></div>
+                    </div>
+                </div>
+
+                <div class="oneDisplay">
+                    <div class="digit2">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                        <div class="verticalR"></div>
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                        <div class="verticalR"></div>
+                        <div class="horizontal on"></div>
+                    </div>
+                </div>
+
+                <div class="oneDisplay">
+                    <div class="digit3">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                        <div class="verticalR"></div>
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                        <div class="verticalR"></div>
+                        <div class="horizontal"></div>
+                    </div>
+                </div>
+
+                <div class="oneDisplay">
+                    <div class="digit4">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                        <div class="verticalR"></div>
+                        <div class="horizontal on"></div>
+                        <div class="vertical"></div>
+                        <div class="verticalR"></div>
+                        <div class="horizontal"></div>
+                    </div>
+                </div>
+
+                <div class="oneDisplay">
+                    <div class="digit5">
+                        <div class="horizontal on"></div>
+                        <div class="vertical on"></div>
+                        <div class="verticalR on"></div>
+                        <div class="horizontal on"></div>
+                        <div class="vertical on"></div>
+                        <div class="verticalR on"></div>
+                        <div class="horizontal on"></div>
+                    </div>
+                </div>
+
+                <div class="oneDisplay">
+                    <div class="digit6">
+                        <div class="horizontal on"></div>
+                        <div class="vertical on"></div>
+                        <div class="verticalR on"></div>
+                        <div class="horizontal on"></div>
+                        <div class="vertical on"></div>
+                        <div class="verticalR on"></div>
+                        <div class="horizontal on"></div>
+                    </div>
+                </div>
+
+                <div class="oneDisplay">
+                    <div class="digit7">
+                        <div class="horizontal on"></div>
+                        <div class="vertical on"></div>
+                        <div class="verticalR on"></div>
+                        <div class="horizontal on"></div>
+                        <div class="vertical on"></div>
+                        <div class="verticalR on"></div>
+                        <div class="horizontal on"></div>
+                    </div>
+                </div>
+
+                <div class="oneDisplay">
+                    <div class="digit8">
+                        <div class="horizontal on"></div>
+                        <div class="vertical on"></div>
+                        <div class="verticalR on"></div>
+                        <div class="horizontal "></div>
+                        <div class="vertical on"></div>
+                        <div class="verticalR on"></div>
+                        <div class="horizontal on"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="twoButtons">
+                <div class="touchButton"><i class="far fa-arrow-alt-circle-up fontNarrow "></i></div>
+                <div class="touchButton"><i class="far fa-arrow-alt-circle-down fontNarrow "></i></div>
+            </section>
+            <section>
+                <div class="ca80">
+                    <a href="https://www.dobreprogramy.pl/PAMPKIN/nbitowa-nostalgia-Mikrokomputer-MIK-CA,59238.html"
+                        target="_blank">What is CA80 ?</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footerL">
+            <a href="https://www.facebook.com/stefan.woronkiewicz" target="_blank">&copy; stewor 2020</a>
+        </div>
+        <div class="footerP">
+            <a target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.stewor.pl%2F&amp;src=sdkpreparse"
+                class="fb-xfbml-parse-ignore"><i class="fab fa-facebook-square"></i></a>
+        </div>
+    </footer>
+    <audio id="play">
+        <source src="sound/beep-29.wav" type="audio/ogg">
+        <source src="sound/beep-29.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="lost">
+        <source src="sound/beep-05.wav" type="audio/ogg">
+        <source src="sound/beep-05.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="StartCa.js"></script>
+
+
+</body>
+
+</html>
