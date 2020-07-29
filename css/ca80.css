@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   background-color: black;
   color: rgb(240, 233, 233);
@@ -115,7 +119,7 @@ h1 {
 
 .ca80 {
   opacity: 0.8;
-  margin-left: 2vw;
+  margin-left: 1vw;
   margin-bottom: 10px;
 }
 
@@ -133,18 +137,27 @@ footer {
   flex-direction: row;
   color: hsl(0, 19%, 93%);
   min-height: 50px;
-  text-align: center;
+  /* text-align: center; */
   line-height: 50px;
   border-top: 1px solid gray;
 }
 
 .footerL {
-  width: 90%;
-  text-align: right;
+  /* width: 90%; */
+  flex-grow: 1;
+  /* text-align: right; */
+  /* align-self: center; */
+  padding-left: 15%;
+  /* align-items: flex-start; */
 }
 
 .footerP {
-  width: 10%;
+  width: 30%;
+}
+
+.big {
+  font-size: 26px;
+  padding-left: 5px;
 }
 
 @keyframes animation {
